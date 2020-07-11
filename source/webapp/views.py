@@ -4,7 +4,7 @@ from webapp.models import Book
 
 
 def index_view(request, *args, **kwargs):
-    books = Book.objects.all()
+    books = Book.objects.filter(status__startswith='active').order_by('created_at').reverse()
     return render(request, 'index.html', context={
         'books': books
 

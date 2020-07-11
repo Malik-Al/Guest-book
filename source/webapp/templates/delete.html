@@ -2,13 +2,9 @@
 
     {% block title %}Delete Book{% endblock %}
 
-{#{% block menu %}#}
-{#     <li><a href="{% url 'b' product.pk %}">Edit</a></li>#}
-{#{% endblock %}#}
-
 {% block content %}
     <form method="POST" action="{% url "book_delete" book.pk%}" class="text-center">
-        <h1>Are you sure want to delete article "{{ book }}"?</h1>
+        <h1>Вы уверены что хотите удалить "{{ book }}"?</h1>
         {% csrf_token %}
         <input type="submit" value="Да" class="btn btn-danger">
         <p><a href="{% url 'index' %}" class="btn btn-primary">Нет</a></p>

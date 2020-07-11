@@ -3,12 +3,12 @@
     {% block title %}Update Book{% endblock %}
 
 {% block menu %}
-    <li><a href="{% url 'index'%}">View</a></li>
+    <li><a href="{% url 'index'%}">List</a></li>
 {% endblock %}
 
 {% block content %}
 <h1 class="create">Редактировать запись</h1>
 <form method="POST" action="{% url "book_update" book.pk%}">
-   {% include 'partial/book_form.html' with button_text='Update'%}
+   {% include 'partial/book_form.html' with button_text='Сохранить'%}
 </form>
 {% endblock %}
