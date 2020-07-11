@@ -1,0 +1,92 @@
+[
+{
+  "model": "webapp.book",
+  "pk": 1,
+  "fields": {
+    "author": "\u0410\u043b\u0438\u043d\u0430",
+    "email": "Imenov-@gmail.com",
+    "text": "\u043d\u0430 2 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430 , \u043d\u0430 13 \u0438\u044e\u043b\u044f",
+    "status": "active",
+    "created_at": "2020-07-11T16:40:32.294Z",
+    "updated_at": "2020-07-11T16:42:45.935Z"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 2,
+  "fields": {
+    "author": "\u041c\u0430\u043b\u0438\u043a",
+    "email": "ivaanlev89@mail.ru",
+    "text": "\u043d\u0430 25 \u0447\u0438\u0441\u043b\u043e 10 \u0447\u0435\u043b\u043e\u0432\u0435\u043a, \u043d\u0430 20 \u0438\u044e\u043b\u044f",
+    "status": "active",
+    "created_at": "2020-07-11T16:41:24.891Z",
+    "updated_at": "2020-07-11T16:42:57.885Z"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 3,
+  "fields": {
+    "author": "\u0421\u0430\u0431\u044b\u0440",
+    "email": "sabo-a@mail.ru",
+    "text": "1 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430 \u043d\u0430 18 \u0438\u044e\u043b\u044f",
+    "status": "active",
+    "created_at": "2020-07-11T16:42:20.124Z",
+    "updated_at": "2020-07-11T16:43:22.821Z"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 4,
+  "fields": {
+    "author": "\u0420\u043e\u0437\u0430",
+    "email": "kasymova2003@mail.ru",
+    "text": "1 \u0447\u0435\u043b\u043e\u0432\u0435\u043a, \u043d\u0430 27 \u0438\u044e\u043b\u044f",
+    "status": "active",
+    "created_at": "2020-07-11T16:44:22.885Z",
+    "updated_at": "2020-07-11T16:44:22.885Z"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 5,
+  "fields": {
+    "author": "\u0422\u0438\u043c\u0443\u0440",
+    "email": "ImenovTima-@gmail.com",
+    "text": "3 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430 \u043d\u0430 7 \u0438\u044e\u043b\u044f",
+    "status": "blocked",
+    "created_at": "2020-07-11T16:45:05.966Z",
+    "updated_at": "2020-07-11T16:45:05.966Z"
+  }
+},
+{
+  "model": "webapp.book",
+  "pk": 6,
+  "fields": {
+    "author": "\u0421\u0430\u043b\u0438\u043c",
+    "email": "Igrihi-a@mail.ru",
+    "text": "1 \u0447\u0435\u043b\u043e\u0432\u0435\u043a 2 \u0438\u044e\u043b\u044f",
+    "status": "blocked",
+    "created_at": "2020-07-11T16:45:53.527Z",
+    "updated_at": "2020-07-11T16:45:53.527Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$xdY1IyUq3wkE$lU3x2xTF8FU+tFFAQ6qP+HytrODonSdp5lb4Lb68q/U=",
+    "last_login": "2020-07-11T16:34:50.036Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-07-11T13:32:47.287Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
