@@ -1,7 +1,7 @@
 from django.contrib import admin
 from webapp.models import Book
 
-
+#
 # class BookAdmin(admin.ModelAdmin):
 #     list_display = ['id', 'name', 'text', 'status']
 #     list_filter = ['name', 'status']
