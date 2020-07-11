@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block menu %}
-{#    <li><a href="{% url 'product_create' %}">Product Create</a></li>#}
+    <li><a href="{% url 'book_create' %}">Book Create</a></li>
 {% endblock %}
 
 {% block content %}
@@ -15,14 +15,14 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
                 <div class="card">
                      <div class="card-body" >
-                         <h2 class ="card-text card-link">Author: {{ book.author}}</h2>
+                         <h2 class ="card-text card-link">Имя: {{ book.author}}</h2>
                          <p class="card-text">Email: {{ book.email }}</p>
-                         <p class="card-text">Status: {{ book.get_status_display}}</p>
-                         <p class="card-text">Text: {{ book.text }}</p>
+                         <p class="card-text">Статус: {{ book.get_status_display}}</p>
+                         <p class="card-text">Текст: {{ book.text }}</p>
                          <p class="card-text">{{ book.created_at|date:'Y-m-d H:i:s' }}</p>
                          <p class="card-text">{{ book.updated_at|date:'Y-m-d H:i:s' }}</p>
-                         <button class="btn btn-primary">Edit</button>
-                         <button class="btn btn-danger">Delete</button>
+                         <button class="btn btn-primary"><a href="{% url 'book_update' book.pk %}" style="color: #fffee8" >Edit</a></button>
+                         <button class="btn btn-danger"><a href="{% url 'book_delete' book.pk %}" style="color: #fffee8" >Delete</a></button>
                     </div>
                 </div>
             </div>
