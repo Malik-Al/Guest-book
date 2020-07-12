@@ -4,7 +4,7 @@ from webapp.models import Book
 
 
 def index_view(request, *args, **kwargs):
-    books = Book.objects.filter(status__startswith='active').order_by('created_at').reverse()
+    books = Book.objects.filter(status='active').order_by('created_at').reverse()
     return render(request, 'index.html', context={
         'books': books
 
@@ -61,3 +61,10 @@ def book_delete_view(request, pk):
         book.delete()
         return redirect('index')
 
+
+def filter_book_name(request):
+    books = request.GET.get('search')
+    book = Book.objects.filter(author__contains=books)
+    return render(request, 'index.html', context={
+        'book': book
+    })
